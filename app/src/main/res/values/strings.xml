@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MUST VISIT</string>
+    <string name="app_in_name">MUST VISIT</string>
+    <string name="app_name_after">Reference App</string>
+    <string name="text_bottom">Log in to your account</string>
+    <string name="btnSignIn">SIGN IN</string>
+    <string name="btnRegister">SIGN UP</string>
+    <string name="search_1">🔍поиск</string>
+    <string name="search_hint">Enter a name</string>
+    <string name="i">My page</string>
+    <string name="levelYellow">LEVEL YELLOW</string>
+    <string name="levelRed">LEVEL RED</string>
+    <string name="levelGreen">LEVEL GREEN</string>
+</resources>

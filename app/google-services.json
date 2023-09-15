@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579741297908",
+    "project_id": "must-visit-ecb3f",
+    "storage_bucket": "must-visit-ecb3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579741297908:android:a739f53228e7cf3b0d42a1",
+        "android_client_info": {
+          "package_name": "it.visit.mustvisit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAenlBBDG4lsEjS-KAqcq-_XbgwOuIgP0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
