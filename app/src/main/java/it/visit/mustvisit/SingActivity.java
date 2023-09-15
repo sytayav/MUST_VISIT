@@ -1,7 +1,6 @@
 package it.visit.mustvisit;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +21,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.UserProfileChangeRequest;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -120,19 +118,13 @@ public class SingActivity extends AppCompatActivity {
 //                                startActivity(intent);
 //                                finish();
 
-                                users.addChildEventListener(new ChildEventListener() {
-
-//                                    @Override
-//                                    public void onChildAdded(@NonNull DataSnapshot snapshot) {
-
-
-                                   // }
-
+                                users.addValueEventListener(new ValueEventListener() {
                                     @Override
-                                    public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                                         Toast.makeText(SingActivity.this, "Дошло.", Toast.LENGTH_SHORT).show();
 
-                                        String level = (String) snapshot.child(userID).child("level").getValue();
+                                        String level = snapshot.child(userID).child("level").getValue(String.class);
                                         if(level.equals ("2")){
                                             Intent intent = new Intent(SingActivity.this, MainActivity.class);
                                             intent.putExtra("userID", userID);
@@ -150,22 +142,6 @@ public class SingActivity extends AppCompatActivity {
                                             finish();
                                         }
                                     }
-
-                                    @Override
-                                    public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-                                    }
-
-                                    @Override
-                                    public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-                                    }
-
-                                    @Override
-                                    public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-                                    }
-
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError error) {
                                         Toast.makeText(SingActivity.this, "Fail to get data.", Toast.LENGTH_SHORT).show();
