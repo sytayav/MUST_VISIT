@@ -30,6 +30,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".MainActivityRed"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityYellow"
+            android:exported="false" />
     </application>
 
 </manifest>

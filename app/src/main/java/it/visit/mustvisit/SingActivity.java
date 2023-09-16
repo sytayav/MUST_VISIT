@@ -226,7 +226,7 @@ public class SingActivity extends AppCompatActivity {
                                                             @Override
                                                             public void onSuccess(AuthResult authResult) {
                                                                 String userID = auth.getCurrentUser().getUid();
-                                                                Intent intent = new Intent(SingActivity.this, MainActivity.class);
+                                                                Intent intent = new Intent(SingActivity.this, MainActivityRed.class);
                                                                 intent.putExtra("userID", userID);
                                                                 startActivity(intent);
                                                                 finish();
