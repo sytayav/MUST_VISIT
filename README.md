@@ -7,5 +7,5 @@
 ![image](https://github.com/sytayav/MUST_VISIT/assets/93943501/d5558b84-216d-4803-a135-795564b3ebf6)
 ![image](https://github.com/sytayav/MUST_VISIT/assets/93943501/31802a09-0503-4bd2-a612-575497195257)
 ![image](https://github.com/sytayav/MUST_VISIT/assets/93943501/7c3ee2be-1a88-4f23-9491-96eecad6d1ac)
-![image](https://github.com/sytayav/MUST_VISIT/assets/93943501/667b0598-b850-407f-8da8-dcd185679f74)
+![image](https://github.com/sytayav/MUST_VISIT/assets/93943501/1dd87450-7da4-470f-9341-d24a03ff10d2)
 
